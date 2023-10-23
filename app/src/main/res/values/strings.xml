@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">lottery</string>
+    <string name="addNumber">Add Number</string>
+    <string name="clearButton">Clear</string>
+    <string name="runButton">Run</string>
+    <string name="firstNumber">1</string>
+    <string name="secondNumber">2</string>
+    <string name="thirdNumber">3</string>
+    <string name="fourthNumber">4</string>
+    <string name="fifthNumber">5</string>
 </resources>
