@@ -50,6 +50,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/firstNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -59,6 +61,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/secondNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -68,6 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/thirdNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -77,6 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fourthNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -86,6 +94,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fifthNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sixthNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sixthNumber"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
             android:textStyle="bold"/>
