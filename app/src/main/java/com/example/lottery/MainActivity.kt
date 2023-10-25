@@ -68,6 +68,8 @@ class MainActivity : AppCompatActivity() {
                 val textView = numberTextViewList[index]
                 textView.text = number.toString()
                 textView.isVisible = true
+
+                setNumberBackground(number, textView)
             }
 
             Log.d("MainActivity", list.toString())
@@ -100,17 +102,7 @@ class MainActivity : AppCompatActivity() {
 
             pickNumberSet.add(numberPicker.value)
 
-            // Colours depending in the range of the numbers
-            when(numberPicker.value) {
-                in 1..10 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_yellow)
-                in 11..20 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_blue)
-                in 21..30 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_red)
-                in 31..40 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_grey)
-                else -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_green)
-            }
-
-            // Code : Apply colour ball look to the numbers
-            //textView.background = ContextCompat.getDrawable(this, R.drawable.circle_blue)
+            setNumberBackground(numberPicker.value, textView)
 
         }
     }
@@ -138,5 +130,19 @@ class MainActivity : AppCompatActivity() {
         numberList.shuffle()
         val finalList = pickNumberSet.toList() + numberList.subList(0, 6 - pickNumberSet.size)
         return finalList.sorted()
+    }
+
+    private fun setNumberBackground(number:Int, textView: TextView) {
+        // Colours depending in the range of the numbers
+        when(number) {
+            in 1..10 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_yellow)
+            in 11..20 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_blue)
+            in 21..30 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_red)
+            in 31..40 -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_grey)
+            else -> textView.background = ContextCompat.getDrawable(this, R.drawable.circle_green)
+        }
+
+        // Code : Apply colour ball look to the numbers
+        //textView.background = ContextCompat.getDrawable(this, R.drawable.circle_blue)
     }
 }
