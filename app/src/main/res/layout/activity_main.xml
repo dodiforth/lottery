@@ -54,7 +54,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/secondNumberTextView"
@@ -65,7 +68,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/thirdNumberTextView"
@@ -76,7 +82,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/fourthNumberTextView"
@@ -87,7 +96,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/fifthNumberTextView"
@@ -98,7 +110,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/sixthNumberTextView"
@@ -109,7 +124,10 @@
             tools:visibility="visible"
             android:layout_margin="5dp"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@drawable/circle_yellow"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
